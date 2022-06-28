@@ -2,4 +2,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: min(800px, 90%);
+  text-align: center;
+  gap: 5rem;
+  color: hsl(200deg, 99%, 20%);
+}
+
+.runningScore,
+.output {
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 5rem;
+}
+
+.runningScore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.output {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.choices {
+  font-size: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  color: lightcoral;
+}
+.choices #rock {
+  color: grey;
+}
+.choices #paper {
+  color: black;
+}
+.choices:hover {
+  cursor: pointer;
+}
+.choices .icons {
+  transition: transform 200ms ease-in;
+}
+.choices .icons:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=styles.css.map */

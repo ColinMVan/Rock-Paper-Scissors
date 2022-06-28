@@ -3,3 +3,70 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+$textColor: hsl(200, 99%, 20%);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: min(800px, 90%);
+  text-align: center;
+  gap: 5rem;
+  color: $textColor;
+}
+
+.runningScore,
+.output {
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 5rem;
+}
+
+.runningScore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.output {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.choices {
+  font-size: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  color: lightcoral;
+
+  #rock {
+    color: grey;
+  }
+
+  #paper {
+    color: black;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .icons {
+    transition: transform 200ms ease-in;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
