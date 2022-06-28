@@ -4,14 +4,15 @@
   box-sizing: border-box;
 }
 
-$textColor: hsl(200, 99%, 20%);
+$textColor: hsl(0, 0%, 95%);
+$background: hsl(200, 60%, 15%);
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: lightblue;
+  background-color: $background;
 }
 
 .container {
@@ -48,15 +49,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  color: lightcoral;
-
-  #rock {
-    color: grey;
-  }
-
-  #paper {
-    color: black;
-  }
+  color: $textColor;
 
   &:hover {
     cursor: pointer;

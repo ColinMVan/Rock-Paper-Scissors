@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: lightblue;
+  background-color: hsl(200deg, 60%, 15%);
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
   width: min(800px, 90%);
   text-align: center;
   gap: 5rem;
-  color: hsl(200deg, 99%, 20%);
+  color: hsl(0deg, 0%, 95%);
 }
 
 .runningScore,
@@ -46,13 +46,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  color: lightcoral;
-}
-.choices #rock {
-  color: grey;
-}
-.choices #paper {
-  color: black;
+  color: hsl(0deg, 0%, 95%);
 }
 .choices:hover {
   cursor: pointer;
